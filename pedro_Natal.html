@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro-Natal</title>
-    <link rel="icon" href="images/pol pot.jpg">
+    <link rel="icon" href="images/cogumelo.png">
 
     <style type="text/css">
 
@@ -42,6 +42,14 @@
             color: #92aec4;
         }
 
+        .predoNatal{
+            word-spacing: 0.1em;
+        }
+
+        a{
+            word-spacing: 0.1em;
+        }
+
         body{
             background-image: url(images/nuvem2.png);
             background-size: cover;
@@ -56,7 +64,7 @@
 
             border: 5px solid black;
 
-            transition: transform 10s;
+            transition: transform 5s;
             animation: animacao;            
         }
 
@@ -93,6 +101,13 @@
             width: 10%;
             margin: auto;
             padding-top: 5px;
+
+            transition: transform 1s;
+            animation: pedro;
+        }
+
+        .pedro:hover{
+            transform: scale(1.2);
         }
 
     </style>
@@ -101,7 +116,8 @@
 
 <nav id="navPrincipal">
 <a href="index.html">Home</a>
-Pedro Natal!!
+<span class="predoNatal">Pedro Natal!!</span>
+<a href="https://vvstore.carrd.co/" target="_blank">VV Store</a>
 </nav>
 
 <img src="images/capa pedro natal.jpg" class="capa">
