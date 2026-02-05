@@ -54,12 +54,14 @@
             background-image: url(images/nuvem2.png);
             background-size: cover;
             background-attachment: fixed;
+
+            font-family: Arial, Helvetica, sans-serif;
         }
 
         .capa{
             display: block;
             margin: auto;
-            margin-top: 10%;
+            margin-top: 5%;
             width:25%;
 
             border: 5px solid black;
@@ -97,17 +99,55 @@
         }
 
         .pedro{
-            display: block;
-            width: 10%;
-            margin: auto;
+            /*isplay: block;
+            width: 10%;*/
+            /*margin: auto;*/
             padding-top: 5px;
-
+            text-align: center;
             transition: transform 1s;
             animation: pedro;
+            font-size: 20px;
+            color: blue;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         }
 
         .pedro:hover{
             transform: scale(1.2);
+        }
+
+        .soundcloud{
+            width: 1.5%;
+        }
+
+        div{
+            margin-top: 1%;
+            /*margin-left: 100px;*/
+            margin-right: 190px;
+            font-family: Arial, Helvetica, sans-serif;
+            
+
+            background-color: lightblue;
+            background-repeat: repeat-x repeat-y;
+            background-size: 6,7px;
+            
+        }
+
+        .criticos{
+            display: block;
+            width: 10%;
+        }
+
+        .critica{
+            display: block;
+            color: aliceblue;
+            margin-top: -5%;
+            margin-left: 11%;
+        }
+        .nome{
+            display: block;
+            color: aliceblue;
+            margin-left: 15%;
+            margin-bottom: 5%;
         }
 
     </style>
@@ -124,16 +164,40 @@
 <img src="images/capa pedro natal.jpg" class="capa">
 
 <a href="https://soundcloud.com/vvs-records-397022864/sets/pedro-natal?si=1fbf0fa3df6e41688f3afbaa553216df&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" >
-<img src="images/pedro natal.png" class="pedro">
+<p class="pedro">Pedro Natal <img class="soundcloud" src="images/soundcloud.png"> </p>
 </a>
 
 <p class="drive">
     <a href="https://drive.google.com/drive/folders/19ZEzuwITi6Ipy8xG8-RAG48W_urVFz_L?usp=sharing" class="drive2">Baixe Aqui!!</a>
 </p>
 
-<audio controls src="audio/SiteTHEME.mp3">
+<div>
+    <h1>Pedro Natal</h1>
 
-</audio>
+    <p>Até o momento o grupo lançou apenas um EP, no dia 26 de dezembro de 2026, intitulado de 'Pedro Natal', o EP apresenta de forma irônica, o assassino em série Lazáro Barbosa, mas com um gorro em sua cabeça.</p>
 
+    <p>O título "Pedro Natal", origina-se a partir de um estilo de memes da comunidade Shitposting de 2020 até 2021, na qual incluía a foto de um homem realizando alguma ação junto do titulo que incluía o nome Pedro junto da ação realizada, por exemplo "Pedro bondades", "Pedro Piadas", "Pedro Construtor"... Entre outros.</p>
+
+    <p>O EP pode ser classificado como <b>Atmosferico, Ambiente, Natalino e Experimental</b>, e já vem recebendo aclamações da crítica desde seu lançamento.</p>
+</div>
+
+<hr>
+
+<h2 style="color: aliceblue;">Opiniões dos críticos:</h2>
+
+<img class="criticos" src="images/avatar jacket.png">
+ <I class="critica">"QUE SENSAÇÃO DE PAZ!!"</I>
+
+ <p class="nome">-Live Jacket Reaction</p>
+
+ <img class="criticos" src="images/cory.png">
+ <I class="critica">"Pior que ficou bom mesmo."</I>
+
+ <p class="nome">-Cory</p>
+
+ <a href="https://www.tiktok.com/@apocalipseguytufo" target="_blank"><img class="criticos" src="images/bomber.jpg"></a>
+ <I class="critica">"Pedro Natal me curou"</I>
+
+ <p class="nome">-Scout, O Sigma de Manaus, AKA Kaleb, AKA Bomber, AKA Zandronum Guard, AKA Spy Scout Tuffox</p>
 </body>
 </html>
