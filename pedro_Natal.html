@@ -120,7 +120,7 @@
             width: 1.5%;
         }
 
-        div{
+        .conteudo{
             margin-top: 1%;
             /*margin-left: 100px;*/
             margin-right: 190px;
@@ -190,7 +190,7 @@
                 width: 3%;
             }
 
-            div{
+            .conteudo{
                 margin-top: 1%;
                 /*margin-left: 100px;*/
                 margin-right: 0px;
@@ -227,6 +227,20 @@
 
         }
 
+        #entrance {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 9999;
+        }
 
     </style>
 </head>
@@ -239,6 +253,10 @@
 <a href="https://valvulasvalves.straw.page/" target="_blank">Contato</a>
 </nav>
 
+    <div id="entrance">
+        <h1>CLIQUE PARA ENTRAR</h1>
+    </div>
+
 <img src="images/capa pedro natal.jpg" class="capa">
 
 <a href="https://soundcloud.com/vvs-records-397022864/sets/pedro-natal?si=1fbf0fa3df6e41688f3afbaa553216df&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" >
@@ -249,7 +267,7 @@
     <a href="https://drive.google.com/drive/folders/19ZEzuwITi6Ipy8xG8-RAG48W_urVFz_L?usp=sharing" class="drive2">Baixe Aqui!!</a>
 </p>
 
-<div>
+<div class="conteudo">
     <h1>Pedro Natal</h1>
 
     <p>Até o momento o grupo lançou apenas um EP, no dia 26 de dezembro de 2026, intitulado de 'Pedro Natal', o EP apresenta de forma irônica, o assassino em série Lazáro Barbosa, mas com um gorro em sua cabeça.</p>
@@ -279,5 +297,33 @@
  </span>
 
  <p class="nome">-Scout, O Sigma de Manaus</p>
+ 
+<img class="criticos" src="images/mateusjeronimo.jpeg">
+<I class="critica">"Muito tuffo Lil Bro."</I>
+</span>
+
+<p class="nome">-Mateusgameplays2012</p>
+
+<img class="criticos" src="images/john.jpg">
+<I class="critica">"Melhor álbum do ano."</I>
+</span>
+
+<p class="nome">-John</p>
+
+<audio id="musica" loop>
+    <source src="audio/SiteTHEME.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+    const splashScreen = document.getElementById('entrance');
+    const musica =document.getElementById('musica')
+    
+    splashScreen.addEventListener('click', function() {
+        musica.play()
+        splashScreen.style.display = 'none';
+    });
+
+</script>
 </body>
 </html>
